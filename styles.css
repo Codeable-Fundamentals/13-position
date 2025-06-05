@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", system-ui, sans-serif;
+  box-sizing: border-box;
+}
+
+boby,
+html {
+  line-height: 1.5;
+  height: 100%;
+  background-color: var(--background-color);
+}
+
+:root {
+  --background-color: #dad9d9;
+  --primary-color: #e8a281;
+  --secondary-color: #fa9bff;
+  --white-color: #ffffff;
+  --black-color: #000000;
+}
+
+.container {
+  border-radius: 10px;
+  background-color: var(--white-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  width: 50%;
+  flex-wrap: wrap;
+}
+
+.container__item {
+  background-color: var(--primary-color);
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  padding: 10px;
+
+}
+
+.container__item:hover {
+  cursor: pointer;
+  position: relative;
+  bottom: 10px;
+
+}
+
+.position-relative {
+  position: relative;
+  background-color: var(--secondary-color);
+  top: 25px;
+}
+
+.img1 {
+  background-image: url("https://unsplash.com/photos/body-of-water-surrounded-by-trees-NRQV-hBF10M");
+}
